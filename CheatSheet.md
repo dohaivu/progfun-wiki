@@ -469,3 +469,31 @@ is equivalent to
     (1 until n).flatMap(i => (1 until i).filter(j => isPrime(i + j)).map(j => (i, j)))
 ```
 
+## Maps
+A map of Type __Map[Key, Value]__ is a data structure that associates keys of type __Key__ with values of type __Value__
+
+### For example
+```scala
+val capitalOfCountry = Map("US" -> "Washington", "Switzerland" -> "Bern")
+```
+
+Maps also are Functions. It extends the function type __Key => Value__
+
+```scala
+capitalOfCountry("US")  //Washington
+```
+
+## Option type
+The __Option__ type is defined:
+
+```scala
+trait Option[+A]
+case class Some[+A](value: A) extends Option[A]
+object None extends Option[Nothing]
+```
+
+return 2 values:
+ - None: if map does not contain the given key
+ - Some(x): if map associates the given key with the value x
+
+
