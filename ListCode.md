@@ -1,3 +1,8 @@
+---
+layout: page
+title: List code in tutorial
+---
+
 ## List code in tutorial
 
 ```scala

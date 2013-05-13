@@ -496,4 +496,13 @@ return 2 values:
  - None: if map does not contain the given key
  - Some(x): if map associates the given key with the value x
 
+## Stream
+Similar to lists, but their tail is evaluated only on demand
+
+## Lazy evaluation
+Scala use strict evaluation by default, but allows lazy evaluation of value definitions with _lazy val_ form:
+
+```scala
+lazy val x = expr
+```
 
